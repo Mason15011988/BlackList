@@ -1,4 +1,3 @@
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
@@ -32,7 +31,6 @@ public class Work {
                     }
                 }
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -54,7 +52,6 @@ public class Work {
                         line = line.trim();
                         search(line);
                         line = new String();
-
                     } else {
                         line += (char) c;
                     }
@@ -77,7 +74,6 @@ public class Work {
             }
         }
     }
-
 
     private static void itog() {
         if (text.size() == 0) {
